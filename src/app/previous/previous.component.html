@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular Hello World Starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <main class="container">
+        <div class="container">
+          <!--<h2>NewtonX Conference</h2> -->
+          <ul class="nav nav-tabs">
+
+        	  <li><a [routerLink]="['/']">Conference Numbers</a></li>
+            <li ><a [routerLink]="['/consulting']">Consultations in Progress</a></li>
+            <li><a [routerLink]="['/upcoming']" >Upcoming Consultations</a></li>
+            <li class="active"><a [routerLink]="['/previous']">Previous Consultations</a></li>
+          </ul>
+          <div id="previousconsultations">
+              <h3>Previous Consultations</h3>
+
+        	      <div class="container">
+
+          <table class="table table-bordered table-striped table-responsive">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Friendly Name</th>
+                <th>Conference Call</th>
+                <th>Access Code</th>
+                <th>Schd Start Time</th>
+                <th>Schd End Time</th>
+                <th>Duration</th>
+                <th>Recording</th>
+                <th>Host Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+          			<td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+            </div>
+    </main>
+</body>
+</html>

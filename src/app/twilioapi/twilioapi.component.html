@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NewtonX Audio Booking</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular Hello World Starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <main class="container">
+        <div class="container">
+          <ul class="nav nav-tabs">
+
+        	  <li class="active"><a [routerLink]="['/']">Conference Numbers</a></li>
+            <li><a [routerLink]="['/consulting']">Consultations in Progress</a></li>
+            <li><a [routerLink]="['/upcoming']" >Upcoming Consultations</a></li>
+            <li><a [routerLink]="['/previous']">Previous Consultations</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="conferencenumbers" >
+              <h3>Conference Numbers</h3>
+              <div class="container">
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Friendly Name</th>
+                <th>Conference Num</th>
+        		    <th>Access Code</th>
+                <th>International Num</th>
+                <th>Max Participants</th>
+        		    <th>Recording</th>
+        		    <th>Action Now</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+        			<td>1</td>
+        			<td>Room #1</td>
+        			<td>203.838.8848</td>
+        			<td>1234</td>
+        			<td>India: +91-9892422994</td>
+        			<td>25</td>
+        			<td>True</td>
+        			<td>Book Now</td>
+              </tr>
+              <tr>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+            </div>
+          </div>
+          </div>
+    </main>
+</body>
+</html>
+
+

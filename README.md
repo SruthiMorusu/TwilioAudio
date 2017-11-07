@@ -29,16 +29,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 API Documentation
 =======
 
-
 ---
-### GET Messages
+### GET Calls
 ---
 
-Return a JSON list of Message objects that are currently being stored.
+Return a JSON list of all calls that are currently being stored.
 
 * **URL**
 
-  `/messages/`
+  `/Accounts/[AccountSid]/Calls`
 
 * **Method:**
   
@@ -61,12 +60,45 @@ Return a JSON list of Message objects that are currently being stored.
 * **Content:**
   
   ```bash
-  {“messages”: [{“message_text”: “hello world”, “id”: 1}]}
+ {
+    "first_page_uri": "/2010-04-01/Accounts/AC90af690f43f41d70e0026dd87xxxx/Calls.json?__referrer=runtime&Format=json&PageSize=50&Page=0",
+    "end": 8,
+    "calls": [
+        {
+            "sid": "CA04549f424b5f961797bd26a1991eca77",
+            "date_created": "Sat, 04 Nov 2017 18:58:13 +0000",
+            "date_updated": "Sat, 04 Nov 2017 18:58:27 +0000",
+            "parent_call_sid": null,
+            "account_sid": "AC90af690f43f41d70e0026dd87xxxxxx",
+            "to": "+1551xxxxxxx",
+            "to_formatted": "(551) xxx-xxxx",
+            "from": "+1551xxxxxxx",
+            "from_formatted": "(551) xxx-xxxx",
+            "phone_number_sid": "PN1ed013d0518e0dee82dff265339dxxx",
+            "status": "completed",
+            "start_time": "Sat, 04 Nov 2017 18:58:13 +0000",
+            "end_time": "Sat, 04 Nov 2017 18:58:27 +0000",
+            "duration": "14",
+            "price": "-0.00850",
+            "price_unit": "USD",
+            "direction": "inbound",
+            "answered_by": null,
+            "annotation": null,
+            "api_version": "2010-04-01",
+            "forwarded_from": "+15512xxxxx",
+            "group_sid": null,
+            "caller_name": null,
+            "uri": "/2010-04-01/Accounts/AC90af690f43f41d70e0026dd87a6e3640/Calls/CA04549f424b5f961797bd26a1991eca77.json",
+            "subresource_uris": {
+                "notifications": "/2010-04-01/Accounts/AC90af690f43f41d70e0026dd87a6e3640/Calls/CA04549f424b5f961797bd26a1991eca77/Notifications.json",
+                "recordings": "/2010-04-01/Accounts/AC90af690f43f41d70e0026dd87a6e3640/Calls/CA04549f424b5f961797bd26a1991eca77/Recordings.json"
+            }
+        },
   ``` 
 
 
 --
-### POST Message
+### GET Conferences
 ---
 
 Should accept a “message_text” parameter that creates a Message object and stores the value.

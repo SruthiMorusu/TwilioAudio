@@ -20,15 +20,16 @@
           <ul class="nav nav-tabs">
 
         	  <li class="active"><a [routerLink]="['/']">Conference Numbers</a></li>
+            <li><a [routerLink]="['/previous']">Previous Consultations</a></li>
             <li><a [routerLink]="['/consulting']">Consultations in Progress</a></li>
             <li><a [routerLink]="['/upcoming']" >Upcoming Consultations</a></li>
-            <li><a [routerLink]="['/previous']">Previous Consultations</a></li>
           </ul>
 
           <div class="tab-content">
             <div id="conferencenumbers" >
               <h3>Conference Numbers</h3>
               <div class="container">
+
 
           <table class="table table-bordered table-striped">
             <thead>
@@ -46,22 +47,12 @@
             <tbody>
               <tr>
         			<td>1</td>
-        			<td>Room #1</td>
-        			<td>203.838.8848</td>
-        			<td>1234</td>
-        			<td>India: +91-9892422994</td>
-        			<td>25</td>
+        			<td>{{conferences[0].friendly_name}}</td>
+        			<td>{{calls[0].to_formatted}}</td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
         			<td>True</td>
-        			<td>Book Now</td>
-              </tr>
-              <tr>
-        			<td></td>
-        			<td></td>
-        			<td></td>
-        			<td></td>
-        			<td></td>
-        			<td></td>
-        			<td></td>
         			<td></td>
               </tr>
 
@@ -74,5 +65,3 @@
     </main>
 </body>
 </html>
-
-

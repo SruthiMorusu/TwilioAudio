@@ -20,9 +20,9 @@
           <ul class="nav nav-tabs">
 
         	  <li><a [routerLink]="['/']">Conference Numbers</a></li>
+            <li class="active"><a [routerLink]="['/previous']">Previous Consultations</a></li>
             <li ><a [routerLink]="['/consulting']">Consultations in Progress</a></li>
             <li><a [routerLink]="['/upcoming']" >Upcoming Consultations</a></li>
-            <li class="active"><a [routerLink]="['/previous']">Previous Consultations</a></li>
           </ul>
           <div id="previousconsultations">
               <h3>Previous Consultations</h3>
@@ -32,52 +32,30 @@
           <table class="table table-bordered table-striped table-responsive">
             <thead>
               <tr>
-                <th>Action</th>
                 <th>Friendly Name</th>
                 <th>Conference Call</th>
-                <th>Access Code</th>
                 <th>Schd Start Time</th>
                 <th>Schd End Time</th>
                 <th>Duration</th>
+                <th>Status</th>
                 <th>Recording</th>
-                <th>Host Name</th>
+
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-                <td></td>
+
+              <tr *ngFor ="let call of callsinfo;let i=index">
+                <td>{{calls[i].friendly_name}}</td>
+          			<td>{{call.to_formatted}}</td>
+
+          			<td>{{call.start_time | date : 'medium'}}</td>
+          			<td>{{call.end_time | date : 'medium'}}</td>
+          			<td>{{call.duration}} sec</td>
+                <td>{{call.status}}</td>
+          			<td>True</td>
+
               </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-          			<td></td>
-                <td></td>
-              </tr>
-            </tbody>
+              </tbody>
           </table>
         </div>
       </div>

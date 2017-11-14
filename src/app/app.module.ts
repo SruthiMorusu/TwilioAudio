@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.modules';
 
 import { AppComponent } from './app.component';
+
 import { TwilioapiComponent } from './twilioapi/twilioapi.component';
+import { TwilioAPIService } from './twilioapi/twilioapi-service.component';
 
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { PreviousComponent } from './previous/previous.component';
@@ -26,7 +28,7 @@ import { ConsultingComponent } from './consulting/consulting.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ TwilioAPIService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

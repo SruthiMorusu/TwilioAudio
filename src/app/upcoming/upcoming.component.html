@@ -20,10 +20,11 @@
           <ul class="nav nav-tabs">
 
         	  <li><a [routerLink]="['/']">Conference Numbers</a></li>
+            <li><a [routerLink]="['/previous']">Previous Consultations</a></li>
             <li><a [routerLink]="['/consulting']">Consultations in Progress</a></li>
             <li class="active"><a [routerLink]="['/upcoming']" >Upcoming Consultations</a></li>
-            <li><a [routerLink]="['/previous']">Previous Consultations</a></li>
           </ul>
+        <div class="tab-content">
         <div id="upcomingconsultations">
               <h3>Upcoming Consultations</h3>
 
@@ -32,7 +33,6 @@
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Action</th>
                 <th>Friendly Name</th>
                 <th>Conference Call</th>
                 <th>Access Code</th>
@@ -53,7 +53,6 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
               </tr>
               <tr>
                 <td></td>
@@ -64,10 +63,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
               </tr>
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -81,6 +78,7 @@
           </table>
         </div>
             </div>
+        </div>
         </div>
     </main>
 </body>

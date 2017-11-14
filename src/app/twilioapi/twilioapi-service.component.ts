@@ -9,7 +9,7 @@ export class TwilioAPIService{
   getData(){
     let headers = new Headers();
     let username: string = 'AC90af690f43f41d70e0026dd87a6e3640';
-    let password: string = '54e77e956588e5d825c8781154c12dc9';
+    let password: string = 'xxxxxxx';
     //let headers: Headers = new Headers();
     headers.append("Authorization", "Basic " + btoa(username + ":" + password));
     headers.append("Content-Type", "application/json");
@@ -19,7 +19,7 @@ export class TwilioAPIService{
   getData2(){
     let headers = new Headers();
     let username: string = 'AC90af690f43f41d70e0026dd87a6e3640';
-    let password: string = '54e77e956588e5d825c8781154c12dc9';
+    let password: string = 'xxxxxxxxxx';
     //let headers: Headers = new Headers();
     headers.append("Authorization", "Basic " + btoa(username + ":" + password));
     headers.append("Content-Type", "application/json");
